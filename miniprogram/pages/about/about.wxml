@@ -1,0 +1,24 @@
+<view class="title">开发：</view>
+<view class="main">
+	<view class="image">
+		<view class="txt" wx:for="{{imgs1}}" wx:key="{{index}}">
+			<image class="im" src="{{item.url}}" data-id="{{index}}"></image>
+			<view class="t">
+				{{item.name}}
+			</view>
+		</view>
+	</view>
+</view>
+<view class="contain">
+	<view class="title">程序简介</view>
+	<view class="description">
+		<text space="emsp" decode="{{ true }}">{{des}}</text>
+	</view>
+	<view class="title">联系方式</view>
+	<view class="description">
+		<view class="tip" bindtap="copy" data-copy="alansmileheng@qq.com" data-name="邮箱">
+			<view>邮箱：</view>
+			<text>alansmileheng@qq.com</text>
+		</view>
+	</view>
+</view>
