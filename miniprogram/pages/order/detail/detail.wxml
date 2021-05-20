@@ -21,7 +21,7 @@
 				{{detail.status==1?'等待收货中':(detail.status==2?'交易完成':'订单已取消')}}
 			</view>
 			<view class="list_2">
-				{{detail.status==1?'系统已通知卖家准备':(detail.status==2?'要不再来一单':'祝您生活愉快')}}
+				{{detail.status==1?'卖家正在准备哦':(detail.status==2?'要不再来一单':'祝您生活愉快')}}
 			</view>
 		</view>
 		<view class="border"></view>
